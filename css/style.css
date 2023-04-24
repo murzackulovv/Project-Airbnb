@@ -1,7 +1,14 @@
 @import './_header.css';
+@import './_search.css';
+@import './_sorting.css';
+@import './_sortAndSearch.css';
 
 :root{
   --main-color: #f1385d;
+  --black-color: #222222;
+  --secondary-color: #717171;
+  --white-color: #fff;
+  --btn-main-bg: #000000;
 }
 
 *{
@@ -16,3 +23,23 @@
   margin: 0 auto;
 }
 
+.btn{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  padding: 5px 8px;
+  color: var(--white-color);
+  background-color: var(--btn-main-bg);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.active-btn{
+  background-color: var(--main-color);
+}

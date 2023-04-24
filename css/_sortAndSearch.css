@@ -1,0 +1,8 @@
+.sortAndSearch{
+  margin-top: 10px;
+}
+.wrapper-sortAndSearch{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
