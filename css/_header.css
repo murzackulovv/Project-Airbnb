@@ -1,0 +1,25 @@
+.header{
+  height: 70px;
+  padding: 19px 0px;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-create{
+  cursor: pointer;
+  position: relative;
+}
+.header-create::before{
+  content: 'Creat House';  
+  position: absolute;
+  font-size: 12px;
+  right: 30px;
+  top: -5px;
+  color: var(--main-color);
+  opacity: 0;
+}
+.header-create:hover::before{
+  opacity: 1;
+}
