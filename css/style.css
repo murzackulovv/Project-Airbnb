@@ -2,6 +2,7 @@
 @import './_search.css';
 @import './_sorting.css';
 @import './_sortAndSearch.css';
+@import './_modal.css';
 
 :root{
   --main-color: #f1385d;
@@ -9,6 +10,7 @@
   --secondary-color: #717171;
   --white-color: #fff;
   --btn-main-bg: #000000;
+  --input-border-color: #A6BCDA;
 }
 
 *{

@@ -1,0 +1,106 @@
+.modal-container{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.446);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(2px);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade .2s ease-in-out .3s forwards ;
+}
+
+@keyframes fade{
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+}
+
+.modal-wrapper{
+  max-width: 705px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  max-height: 705px;
+  height: 100%;
+  padding: 30px 114px 60px;
+}
+.modal__title{
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: -0.05em;
+  color: #000000;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+.modal-form label{
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: var(--btn-main-bg);
+  cursor: pointer;
+}
+.modal-form input{
+  margin-bottom: 27px;
+  padding: 11px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--input-border-color);
+  transition: all 0.4s ease-in;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.modal-form input::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--input-border-color);
+}
+.modal-form input:focus{
+  border: 2px solid var(--main-color);
+}
+.modal-form textarea{
+  margin-bottom: 27px;
+  width: 100% !important;
+  height: 80px !important;
+  border-radius: 8px;
+  padding: 11px 10px;
+  outline: none;
+  transition: all 0.4s ease-in;
+  border: 2px solid var(--input-border-color);
+}
+.modal-form textarea:focus{
+  border: 2px solid var(--main-color);
+}
+.modal__btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: var(--main-color);
+  border-radius: 8px;
+  color: var(--white-color);
+  font-weight: 600;
+  line-height: 20px;
+  transition: all 0.4s ease-in;
+}
+.modal__btn:hover{
+  background-color: #de284d;
+}
